@@ -14,17 +14,10 @@ app.use(express.json());
 // What does this do: serves files from public directory
 app.use(express.static("public"));
 
-// What does this do: Creates routes to html files
 
-// return notes.html
-app.get("/notes", function(req, res){
-    res.sendFile(path.join(__dirname, "/public/notes.html"))
-});
+app.use("/", require("./Routes/htmlRoutes"));
+app.use("/api", require("./Routes/apiRoutes"));
 
-// returns index.html
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "/public/index.html"))
-});
 // Listener
 app.listen(PORT, function() {
     console.log(`App listening on PORT ${PORT}`);
