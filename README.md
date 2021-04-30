@@ -15,9 +15,11 @@ Github Repo Link: https://github.com/JuliaKiser/Note_Taker
 
 ## Webpage Details
 
+This web application allows the user to create, modify and delete notes. It utilizes Express.js backend that saves/retrieves files from a JSON file.
+
 ## Demo Video
 
-![Kiser Portfolio](./assets/images/Updated.Portfolio.gif)
+![Note Taker Demo](./Assets/Notes.gif)
 
 ## Acceptance Criteria
 
