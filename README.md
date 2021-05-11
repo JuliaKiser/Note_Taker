@@ -9,7 +9,7 @@
 
 ## Note Taker Links
 
-Deployed Link: https://juliakiser.github.io/Note_Taker/
+Deployed Link: https://jk-note-taker.herokuapp.com/
 
 Github Repo Link: https://github.com/JuliaKiser/Note_Taker
 

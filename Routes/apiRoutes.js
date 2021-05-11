@@ -24,8 +24,9 @@ router.post('/notes', (req, res) => {
 })
 
 // This will allow you to delete a new note
-router.delete("./notes/:id", (req, res) => {
-    const removeNote = parseInt(req.params.id)
+router.delete("/notes/:id", (req, res) => {
+    const removeNote = req.params.id;
+    console.log(removeNote);
     const newArr = notes.filter(note => note.id !== removeNote)
     fs.writeFile('./db/db.json', JSON.stringify(newArr), err => {
         notes = newArr
